@@ -1,0 +1,55 @@
+.footer {
+  padding: 7.5rem 5rem 5rem;
+  background-color: #e29f51;
+
+  .donation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+
+    a,
+    p {
+      font-size: 2rem;
+    }
+
+    p {
+      margin-right: 1rem;
+    }
+    a {
+      color: var(--color-primary);
+    }
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      &:not(:last-child) {
+        margin-right: 3rem;
+      }
+      .icon {
+        cursor: pointer;
+        width: 5rem;
+        height: 5rem;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
+
+@include respond(phone) {
+  .footer {
+    padding: 2rem;
+    .donation {
+      flex-direction: column;
+    }
+  }
+}

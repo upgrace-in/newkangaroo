@@ -1,0 +1,8 @@
+.home {
+  @import "./sections/Landing/landing";
+  @import "./sections/About/about";
+  @import "./sections/Mint/mint";
+  @import "./sections/Roadmap/roadmap";
+  @import "./sections/Faq/faq";
+  @import "./sections/Footer/footer";
+}

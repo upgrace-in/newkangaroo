@@ -1,0 +1,61 @@
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@font-face {
+  font-family: "noyh";
+  src: url("../base/noyh.ttf");
+}
+
+$font-primary: "noyh", "Roboto", sans-serif;
+
+// colors
+
+// hash values
+
+$color-light: #fff;
+$color-dark: #151515;
+$color-background-dark: rgb(0, 0, 38);
+$color-background-light: #fff;
+$color-primary-light: #ffe6bb;
+$color-primary-dark: rgb(55, 0, 216);
+$color-secondary-light: #ffa000;
+$color-secondary-dark: rgb(56, 0, 255);
+$color-tertiary-light: #ffda89;
+$color-tertiary-dark: rgb(255, 195, 0);
+$color-success: #28a745;
+$color-danger: #621f17;
+$color-warning: #fecf28;
+$color-info: #fecf28;
+$color-grey-dark: #727272;
+$color-grey-light: #9d9d9d;
+
+// others
+$transition-primary: all 0.3s;
+$shadow-secondary-light: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+$shadow-secondary-dark: rgba($color-grey-light, 0.2) 0px 7px 29px 0px;
+$shadow-primary-dark: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+$shadow-primary-light: 0 0 1rem 0 rgba(255, 255, 255, 0.1);
+$shadow-tertiary: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+
+:root {
+  // Colors
+  --color-light: #{$color-light};
+  --color-dark: #{$color-dark};
+  --color-background: #{$color-background-light};
+  --color-primary: #{$color-primary-dark};
+  --color-secondary: #{$color-secondary-dark};
+  --color-tertiary: #{$color-tertiary-dark};
+  --color-success: #{$color-success};
+  --color-danger: #{$color-danger};
+  --color-warning: #{$color-warning};
+  --color-info: #{$color-info};
+  --color-grey-light: #{$color-grey-light};
+  --color-grey-dark: #{$color-grey-dark};
+  --color-grey-opaque: #{rgba($color-grey-dark, 0.15)};
+
+  // Box Shadows
+  --shadow-primary-light: #{$shadow-primary-light};
+  --shadow-primary-dark: #{$shadow-primary-dark};
+  --shadow-secondary-light: #{$shadow-secondary-light};
+  --shadow-secondary-dark: #{$shadow-secondary-dark};
+}
